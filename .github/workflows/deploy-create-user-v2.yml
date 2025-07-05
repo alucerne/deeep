@@ -19,5 +19,7 @@ jobs:
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
         run: |
+          echo "Linking to Supabase..."
           supabase link --project-ref sjfbjdukjlywvsfiplof
+          echo "Deploying function..."
           supabase functions deploy create-user-v2
