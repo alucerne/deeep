@@ -22,4 +22,3 @@ jobs:
           supabase link --project-ref sjfbjdukjlywvsfiplof
           supabase functions deploy create-user-v2
 
-add: new GitHub Actions deploy workflow (v2)
